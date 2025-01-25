@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAPAN</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <!-- <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a> -->
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li  onclick= hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#banner1">Home</a></li>
+            <li><a href="#highlights1">Highlights</a></li>
+            <li><a href="#long-cards">Culture and food</a></li>
+            <li><a href="#footer1">Footer</a></li>
+        </ul>
+        
+        <ul>
+            <li><a href="#"><img src="./logo.svg" height="38px" width="38px" alt="logo"></a></li>
+            <li class="hideOnMobile"><a href="#banner1">Home</a></li>
+            <li class="hideOnMobile"><a href="#highlights1">Highlights</a></li>
+            <li class="hideOnMobile"><a href="#long-cards">Culture and food</a></li>
+            <li class="hideOnMobile"><a href="#footer1">Footer</a></li>
+            <li class="menu-button" onclick= showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+             const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+  
+    <div class="banner" id="banner1">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="./Japan_images/one.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="./Japan_images/two.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="./Japan_images/three.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="./Japan_images/four.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="./Japan_images/five.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="./Japan_images/six.jpg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="./Japan_images/seven.jpg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="./Japan_images/eight.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="./Japan_images/nine.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="./Japan_images/ten.jpg" alt=""></div>
+        </div>
+
+        
+        <div class="content">
+            <h1 data-content="JAPAN">
+                JAPAN
+            </h1>
+            <div class="author">
+                <h2> Designed by: Sarvadnya</h2>
+                <!-- <p><b>Web Design</b></p> -->
+                <p>
+                    "Japan is not a place; it’s a story—a tale of ancient traditions, modern wonders, and a culture that blends serenity with resilience."
+
+                </p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+     <!-- New Section -->
+     <!-- <div class="new-section">
+        <h2>About Us</h2>
+        <p>
+            Welcome to our creative space! We specialize in web design and development, offering modern and visually appealing solutions to bring your ideas to life. Explore our portfolio and let us help you craft your next big project.
+        </p>
+        <div class="button">
+            <a href="#portfolio">View Portfolio</a>
+        </div>
+    </div> -->
+    <div class="highlights" >
+        <h2>Travel Highlights</h2>
+    </div>
+
+    <!-- Cards Section -->
+<div class="cards-section" id="highlights1">
+    <div class="card">
+        <img src="./Japan_images/Travel/one.jpg" alt="Card 1 Image">
+        <h3>Kinkakuji Temple</h3>
+        <p>Kinkakuji Temple, also known as "Golden Pavilion", is Zen Buddhist temple in Kyoto renowned for its gold-leaf exterior and serene reflecting pond.</p>
+        <a href="https://www.japan-guide.com/e/e3908.html" target="_blank" class="button">Read More</a>
+    </div>
+    <div class="card">
+        <img src="./Japan_images/Travel/two.jpg" alt="Card 2 Image">
+        <h3>Fushimi Inari-taisha Shrine</h3>
+        <p>A mesmerizing Shinto shrine in Kyoto, famous for its endless vermilion torii gates winding through a sacred forested mountain.</p>
+        <a href="https://www.japan-guide.com/e/e3915.html" target="_blank" class="button">Read More</a>
+    </div>
+    <div class="card">
+        <img src="./Japan_images/Travel/three.jpg" alt="Card 3 Image">
+        <h3>Dotombori District</h3>
+        <p>Osaka's vibrant entertainment hub, alive with neon lights, mouthwatering street food, and iconic landmarks like the Glico Running Man.</p>
+        <a href="https://www.osakastation.com/dotonbori-area-the-bright-heart-of-osaka/" target="_blank" class="button">Read More</a>
+    </div>
+    <div class="card">
+        <img src="./Japan_images/Travel/four.jpg" alt="Card 1 Image">
+        <h3>Himeji Castle</h3>
+        <p>Japan's most iconic and pristine samurai-era castle, known as the "White Heron Castle" for its elegant, soaring architecture.  
+        </p>
+        <a href="https://www.japan-guide.com/e/e3501.html" target="_blank" class="button">Read More</a>
+    </div>
+    <div class="card">
+        <img src="./Japan_images/Travel/five.jpg" alt="Card 2 Image">
+        <h3>Samurai and Ninja Museum with Experience</h3>
+        <p>A thrilling Kyoto attraction where you dive into Japan's feudal history through immersive exhibits, samurai armor, and ninja demonstrations.</p>
+        <a href="https://www.tripadvisor.in/Attraction_Review-g298564-d13551788-Reviews-SAMURAI_NINJA_MUSEUM_with_EXPERIENCE-Kyoto_Kyoto_Prefecture_Kinki.html" target="_blank" class="button">Read More</a>
+    </div>
+    <div class="card">
+        <img src="./Japan_images/Travel/six.jpg" alt="Card 3 Image">
+        <h3>Tokyo Disneyland</h3>
+        <p> A magical wonderland blending Disney charm with Japanese creativity, offering unforgettable rides, parades, and cultural experiences.</p>
+        <a href="https://www.tokyodisneyresort.jp/en/tdl/" target="_blank" class="button">Read More</a>
+    </div>
+</div>
+
+<div class="highlights">
+    <h2>Cultural Facts and Food</h2>
+</div>
+
+<!-- left image -->
+<div class="image-text-section" id="long-cards">
+    <div class="image-container">
+        <!-- <img src="./Japan_images/eleven.jpg" alt="Circle Image"> -->
+        <video loop muted autoplay >
+            <source src="./Japan_images/food-montage.mp4" type="video/mp4"></video>
+    </div>
+    <div class="text-container">
+        <p>Japan is a paradise for food lovers, offering iconic dishes that tantalize the taste buds and reflect its rich culture. From the delicate artistry of sushi and sashimi to the comforting warmth of ramen and udon, each dish tells a story. Don't miss crispy tempura, savory okonomiyaki, or the melt-in-your-mouth perfection of wagyu beef, paired with a sip of matcha tea or sake for an authentic culinary journey.
+        </p>
+    </div>
+</div>
+
+ <!-- Image and Text Section (Right Image) -->
+
+<div class="image-text-section right-image">
+    <div class="text-container">
+        <p>Japanese culture is a harmonious blend of ancient traditions and modern innovation, offering a unique perspective on art, etiquette, and spirituality. From the graceful tea ceremonies and Zen gardens to the vibrant pop culture and cutting-edge technology, Japan's ability to honor its past while embracing the future makes it truly exceptional.
+        </p>
+    </div>
+    <div class="image-container">
+        <!-- <img src="./images/dragon_2.jpg" alt="Circle Image"> -->
+        <video loop muted autoplay >
+            <source src="./Japan_images/Kyoto-Montage.mp4" type="video/mp4"></video>
+    </div>
+</div> 
+
+ <!-- New Section: Image and Text for left image-->
+ <div class="image-text-section">
+    <div class="image-container">
+        <!-- <img src="./images/dragon_1.jpg" alt="Circle Image"> -->
+        <video loop muted autoplay >
+            <source src="./Japan_images/anime-montage.mp4" type="video/mp4"></video>
+    </div>
+    <div class="text-container">
+        <p>Japanese Anime culture is a global phenomenon, captivating audiences with its diverse storytelling, vibrant art styles, and emotionally rich characters. Iconic works like My Neighbor Totoro, Naruto, and Demon Slayer showcase the depth and creativity of anime, inspiring millions of fans, conventions, and merchandise worldwide, cementing Japan as the epicenter of this beloved art form.
+    </p>
+    </div>
+</div>
+
+<!-- Image and Text Section (Right Image) -->
+
+<div class="image-text-section right-image">
+    <div class="text-container">
+        <p>Japanese innovation and technology are renowned for blending precision, creativity, and functionality. From pioneering robotics and bullet trains to eco-friendly practices and cutting-edge electronics, Japan has consistently led the world in shaping the future. This commitment to excellence reflects a culture deeply rooted in progress and perfection.
+        </p>
+    </div>
+    <div class="image-container">
+        <!-- <img src="./images/dragon_2.jpg" alt="Circle Image"> -->
+        <video loop muted autoplay >
+            <source src="./Japan_images/technology-montage.mp4" type="video/mp4"></video>
+    </div>
+</div> 
+<!-- Footer -->
+<footer class="footer" id="footer1">
+    <div class="footer-content">
+        <p>&copy; 2025 Sarvadnya Mistry | All Rights Reserved</p>
+        <ul class="footer-links">
+            <li><a href="#banner1">Home</a></li>
+            <li><a href="#highlights1">Highlights</a></li>
+            <!-- <li><a href="#cards-section">Gallery</a></li> -->
+            <li><a href="#long-cards">Culture and food</a></li>
+            <li><a href="https://www.britannica.com/place/Japan" target="_blank">Learn more</a></li>
+        </ul>
+    </div>
+    <!-- <div class="up-arrow" id="scrollToTop">
+        &#x25B2;
+    </div> -->
+</footer>
+
+</body>
+</html>
